@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/purple_200"
+    tools:context=".ui.notifications.NotificationsFragment">
+
+    <com.scwang.smart.refresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlEnablePureScrollMode="true"
+        app:srlEnableLoadMore="false"
+        app:srlDragRate="0.75">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:id="@+id/profile"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="70dp"
+                    app:srcCompat="@drawable/ic_launcher_foreground"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:id="@+id/username"
+                    android:text="Kanye West"
+                    android:textColor="@android:color/white"
+                    android:textSize="24sp" />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/carInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="#44ffffff"
+                android:paddingLeft="20dp"
+                android:paddingTop="15dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="15dp">
+
+                <com.flyco.roundview.RoundFrameLayout
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    app:rv_backgroundColor="#673AB7"
+                    app:rv_isRadiusHalfHeight="true">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/dp_10"
+                        android:contentDescription="@string/app_name"
+                        app:srcCompat="@drawable/ic_fly_refresh_folder"
+                        tools:ignore="VectorDrawableCompat" />
+                </com.flyco.roundview.RoundFrameLayout>
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:text="信息设置"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/myFeed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#77ffffff"
+                android:paddingLeft="20dp"
+                android:paddingTop="15dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="15dp">
+
+                <com.flyco.roundview.RoundFrameLayout
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    app:rv_backgroundColor="#ff11bb"
+                    app:rv_isRadiusHalfHeight="true">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/dp_10"
+                        android:contentDescription="@string/app_name"
+                        app:srcCompat="@drawable/ic_fly_refresh_poll"
+                        tools:ignore="VectorDrawableCompat" />
+                </com.flyco.roundview.RoundFrameLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="30dp"
+
+                    android:text="我的帖子"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/alertMsg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="15dp"
+                android:background="#aaffffff">
+                <com.flyco.roundview.RoundFrameLayout
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    app:rv_isRadiusHalfHeight="true"
+                    app:rv_backgroundColor="#595CEA">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/dp_10"
+                        android:contentDescription="@string/app_name"
+                        app:srcCompat="@drawable/ic_fly_refresh_phone"
+                        tools:ignore="VectorDrawableCompat" />
+                </com.flyco.roundview.RoundFrameLayout>
+                <TextView
+                    android:id="@+id/unReadNum"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/red_circle"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/white"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="30dp"
+                    android:text="我的消息"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/myAccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ddffffff"
+                android:paddingLeft="20dp"
+                android:paddingTop="15dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="15dp">
+
+                <com.flyco.roundview.RoundFrameLayout
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    app:rv_backgroundColor="#bb11ff"
+                    app:rv_isRadiusHalfHeight="true">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/dp_10"
+                        android:contentDescription="@string/app_name"
+                        app:srcCompat="@drawable/ic_empty"
+                        tools:ignore="VectorDrawableCompat" />
+                </com.flyco.roundview.RoundFrameLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="30dp"
+                    android:text="我的账号"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+
+
+
+</LinearLayout>

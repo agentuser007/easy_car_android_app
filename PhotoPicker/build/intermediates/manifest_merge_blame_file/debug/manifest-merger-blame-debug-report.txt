@@ -1,0 +1,42 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="me.iwf.photopicker" >
+4
+5    <uses-sdk
+6        android:minSdkVersion="16"
+6-->/Users/dzzzg8/AndroidStudioProjects/EasyCar/PhotoPicker/src/main/AndroidManifest.xml
+7        android:targetSdkVersion="28" />
+7-->/Users/dzzzg8/AndroidStudioProjects/EasyCar/PhotoPicker/src/main/AndroidManifest.xml
+8
+9    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+9-->/Users/dzzzg8/AndroidStudioProjects/EasyCar/PhotoPicker/src/main/AndroidManifest.xml:5:5-80
+9-->/Users/dzzzg8/AndroidStudioProjects/EasyCar/PhotoPicker/src/main/AndroidManifest.xml:5:22-78
+10    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+10-->/Users/dzzzg8/AndroidStudioProjects/EasyCar/PhotoPicker/src/main/AndroidManifest.xml:6:5-79
+10-->/Users/dzzzg8/AndroidStudioProjects/EasyCar/PhotoPicker/src/main/AndroidManifest.xml:6:22-77
+11    <uses-permission android:name="android.permission.CAMERA" />
+11-->/Users/dzzzg8/AndroidStudioProjects/EasyCar/PhotoPicker/src/main/AndroidManifest.xml:7:5-65
+11-->/Users/dzzzg8/AndroidStudioProjects/EasyCar/PhotoPicker/src/main/AndroidManifest.xml:7:22-62
+12
+13    <application>
+13-->/Users/dzzzg8/AndroidStudioProjects/EasyCar/PhotoPicker/src/main/AndroidManifest.xml:9:5-18:19
+14        <provider
+14-->/Users/dzzzg8/AndroidStudioProjects/EasyCar/PhotoPicker/src/main/AndroidManifest.xml:10:9-17:20
+15            android:name="me.iwf.photopicker.utils.PhotoFileProvider"
+15-->/Users/dzzzg8/AndroidStudioProjects/EasyCar/PhotoPicker/src/main/AndroidManifest.xml:11:13-70
+16            android:authorities="${applicationId}.provider"
+16-->/Users/dzzzg8/AndroidStudioProjects/EasyCar/PhotoPicker/src/main/AndroidManifest.xml:12:13-60
+17            android:exported="false"
+17-->/Users/dzzzg8/AndroidStudioProjects/EasyCar/PhotoPicker/src/main/AndroidManifest.xml:13:13-37
+18            android:grantUriPermissions="true" >
+18-->/Users/dzzzg8/AndroidStudioProjects/EasyCar/PhotoPicker/src/main/AndroidManifest.xml:14:13-47
+19            <meta-data
+19-->/Users/dzzzg8/AndroidStudioProjects/EasyCar/PhotoPicker/src/main/AndroidManifest.xml:15:13-16:66
+20                android:name="android.support.FILE_PROVIDER_PATHS"
+20-->/Users/dzzzg8/AndroidStudioProjects/EasyCar/PhotoPicker/src/main/AndroidManifest.xml:15:24-74
+21                android:resource="@xml/__picker_provider_paths" />
+21-->/Users/dzzzg8/AndroidStudioProjects/EasyCar/PhotoPicker/src/main/AndroidManifest.xml:16:17-64
+22        </provider>
+23    </application>
+24
+25</manifest>

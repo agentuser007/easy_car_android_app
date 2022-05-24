@@ -1,0 +1,335 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name" tools:ignore="MissingTranslation">Easy Car</string>
+    <string name="title_home">首页</string>
+    <string name="title_dashboard">车辆</string>
+    <string name="title_notifications">设置</string>
+
+
+    <string name="title_style">Style</string>
+    <string name="title_example">Example</string>
+    <string name="title_practice">Practice</string>
+
+    <string name="region_hint">unselected</string>
+    <string name="region_name">selected area</string>
+
+    <string name="fragment_refresh_styles">Styles</string>
+    <string name="fragment_refresh_example">Examples</string>
+    <string name="fragment_refresh_practice">Practice</string>
+
+    <string name="title_activity_index_main">Refresh</string>
+
+    <string name="title_activity_practice_repast">Restaurant</string>
+    <string name="title_activity_practice_profile">Profile</string>
+    <string name="title_activity_practice_web_view">Github</string>
+    <string name="title_activity_practice_feed_list">Feed List</string>
+    <string name="title_activity_practice_banner">Banner</string>
+    <string name="title_activity_practice_weibo">Weibo Home</string>
+    <string name="title_activity_practice_qq_browser">QQ Browser</string>
+
+    <string name="title_activity_style_wave_swipe">WaveSwipeHeader</string>
+    <string name="title_activity_style_material">MaterialHeader</string>
+    <string name="title_activity_style_water_drop">WaterDropHeader</string>
+    <string name="title_activity_style_phoenix">PhoenixHeader</string>
+    <string name="title_activity_style_taurus">TaurusHeader</string>
+    <string name="title_activity_style_bezier">BezierRadarHeader</string>
+    <string name="title_activity_style_classics">ClassicsHeader</string>
+    <string name="title_activity_style_circle">BezierCircleHeader</string>
+    <string name="title_activity_style_battle_city">FunGameBattleCityHeader</string>
+    <string name="title_activity_style_hit_block">FunGameHitBlockHeader</string>
+    <string name="title_activity_style_storehouse">StoreHouseHeader</string>
+    <string name="title_activity_style_drop_box">DropBoxHeader</string>
+    <string name="title_activity_style_delivery">DeliveryHeader</string>
+    <string name="title_activity_style_fly_refresh">FlyRefreshHeader</string>
+
+    <string name="title_activity_example_basic">General Example</string>
+    <string name="title_activity_example_assign_default">Global Default</string>
+    <string name="title_activity_example_assign_xml">Specified In XML</string>
+    <string name="title_activity_example_assign_code">Specified In Java</string>
+    <string name="title_activity_example_over_scroll">Cross-border springBack</string>
+    <string name="title_activity_example_listener">Multifunction monitor</string>
+    <string name="title_activity_example_custom">Custom Header</string>
+    <string name="title_activity_example_snap_helper">SnapHelper</string>
+    <string name="title_activity_example_i18n">I18N</string>
+
+    <string name="fragment_example_no_more_data">No More Data</string>
+    <string name="fragment_example_horizontal">Horizontal Scroll Mode</string>
+    <string name="fragment_example_pure_scroll">Pure Rolling Mode</string>
+    <string name="fragment_example_pure_scroll_header">Pure Rolling Mode - Header Only</string>
+    <string name="fragment_example_empty_layout">Empty Layout</string>
+    <string name="fragment_example_empty_layout_inner">Empty Layout - Nested Inside</string>
+    <string name="fragment_example_empty_layout_outer">Empty Layout - Nested Outside</string>
+    <string name="fragment_example_nest_scroll">Nested Scrolling</string>
+    <string name="fragment_example_nested_scroll_integral">Nested Scrolling - Whole Nested</string>
+    <string name="fragment_example_viewpager">ViewPager</string>
+    <string name="fragment_example_three_level">Three Level Refresh</string>
+    <string name="fragment_example_bottom_sheet">Bottom Sheet</string>
+    <string name="fragment_example_flex_box_layout">FlexBox Layout Manager</string>
+    <string name="fragment_example_disallow_intercept">Disallow Intercept</string>
+    <string name="fragment_example_staggered_grid">Staggered Grid</string>
+
+
+    <string name="fragment_practice_instant">Instant</string>
+
+    <string name="index_practice_repast">Simple customization header, HeaderInsetStart</string>
+    <string name="index_practice_profile">Pure scroll mode</string>
+    <string name="index_practice_web_view">Use WebView</string>
+    <string name="index_practice_feed_list">Intelligent identification</string>
+    <string name="index_practice_weibo">MultiPurposeListener</string>
+    <string name="index_practice_banner">Use banner</string>
+    <string name="index_practice_qq_browser">Imitate QQ browser</string>
+    <string name="index_practice_second_floor">Imitate the second floor of "Treasure Prospecting"</string>
+    <string name="index_practice_instant">Instant Messaging</string>
+
+
+    <string name="index_example_basic">The basic usage of refresh layout</string>
+    <string name="index_example_style">Specify the style of Header and Footer</string>
+    <string name="index_example_no_more_data">The usage of no more data</string>
+    <string name="index_example_empty">The usage of empty pages</string>
+    <string name="index_example_layout">Use Layout as content</string>
+    <string name="index_example_nested">The usage of nested scroll</string>
+    <string name="index_example_scroll">The usage of pure rolling mode</string>
+    <string name="index_example_listener">The usage of multifunction listener</string>
+    <string name="index_example_custom">The usage of custom Header</string>
+    <string name="index_example_i18n">The usage of I18n</string>
+    <string name="index_example_snap_helper">The usage of SnapHelper</string>
+    <string name="index_example_pager">The usage of ViewPager</string>
+    <string name="index_example_bottom_sheet">The usage of BottomSheet</string>
+    <string name="index_example_level">The usage of three level refresh</string>
+    <string name="index_example_flex_box">The usage of FlexboxLayoutManager</string>
+    <string name="index_example_horizontal">The usage of Horizontal Scroll</string>
+    <string name="index_example_disallow_intercept">The usage of requestDisallowInterceptTouchEvent</string>
+    <string name="index_example_staggered_grid">The usage of StaggeredGridLayoutManager</string>
+
+    <string name="item_style_theme_orange_abstract">Change theme to orange color</string>
+    <string name="item_style_theme_red_abstract">Change theme to red color</string>
+    <string name="item_style_theme_green_abstract">Change theme to green color</string>
+    <string name="item_style_theme_blue_abstract">Change theme to blue color</string>
+    <string name="item_style_theme_default_abstract">Change theme to default color</string>
+    <string name="item_style_content_translation_off">The content stays where it is when it is pulled down</string>
+    <string name="item_style_content_translation_on">The content follow the downward migration when pulling down</string>
+    <string name="item_style_horizontal_drag_on">Open left and right drag effect</string>
+    <string name="item_style_horizontal_drag_off">Close the left and right drag effect</string>
+    <string name="item_style_spinner_scale">The height of the Header is larger when you pull down</string>
+    <string name="item_style_spinner_translation">The Header\'s position is shifted down when you pull down</string>
+    <string name="item_style_spinner_behind">The Header is fixed behind the back when you pull down</string>
+    <string name="item_style_spinner_update_on">Open display last update function</string>
+    <string name="item_style_spinner_update_off">The shutdown shows the last update function</string>
+    <string name="item_style_load_more">The top pull loads more</string>
+    <string name="item_style_bezier_on">Draw the background of bezier curve when pulling down</string>
+    <string name="item_style_bezier_off">Don\'t draw the background of bezier curve when pulling down</string>
+    <string name="item_style_app_bar_expand">Expand the AppBarLayout </string>
+    <string name="item_style_app_bar_collapse">Collapse the AppBarLayout</string>
+    <string name="item_style_store_house_english">And change the display symbol in English</string>
+    <string name="item_style_store_house_chinese">The display symbol is Chinese</string>
+    <string name="item_style_store_house_icon">Follow the display symbol for ICONS</string>
+    <string name="item_style_store_house_brand">It is a trademark for the display symbol</string>
+
+    <string name="item_example_number_title">Item %02d</string>
+    <string name="item_example_number_abstract">This is the abstract item %02d</string>
+    <string name="item_example_pager_left">Left Pager</string>
+    <string name="item_example_pager_right">Right Pager</string>
+
+    <string name="item_example_i18n_system">System</string>
+    <string name="item_example_i18n_chinese">Chinese</string>
+    <string name="item_example_i18n_english">English</string>
+    <string name="item_example_i18n_click">Click to switch the language to %s</string>
+
+    <string name="github_qq_browser_kernel">The web page is provided by github.com.\nThe QQ browser X5 kernel has been enabled.</string>
+
+    <string name="description_set_default_creator">\n
+        Usage： \n
+        SmartRefreshLayout.setDefaultRefreshHeaderCreator(new DefaultRefreshHeaderCreator() {\n
+        public RefreshHeader createRefreshHeader(Context context, RefreshLayout layout) {\n
+        return new ClassicsHeader(context);\n
+        }\n
+        });\n
+        SmartRefreshLayout.setDefaultRefreshFooterCreator(new DefaultRefreshFooterCreator() {\n
+        public RefreshFooter createRefreshFooter(Context context, RefreshLayout layout) {\n
+        return new ClassicsFooter(context);\n
+        }\n
+        });\n\n
+        The key code needs to be set before the layout is generated and the recommended code is placed in the "Application.onCreate".
+    </string>
+    <string name="description_define_in_xml"><![CDATA[\n
+        Feature：\n
+        1.Can preview in Android Studio\n
+        2.Priority is higher than [global default] but below [JavaCode]\n\n
+        Usage：\n
+        <com.scwang.smartrefresh.SmartRefreshLayout\n
+            \t\tandroid:layout_width="match_parent"\n
+            \t\tandroid:layout_height="match_parent">\n
+            \t<com.scwang.smartrefresh.header.ClassicsHeader\n
+                \t\tandroid:layout_width="match_parent"\n
+                \t\tandroid:layout_height="wrap_content"/>\n
+            \t<TextView\n
+                \t\tandroid:layout_width="match_parent"\n
+                \t\tandroid:layout_height="match_parent"/>\n
+            \t<com.scwang.smartrefresh.footer.ClassicsFooter\n
+                \t\tandroid:layout_width="match_parent"\n
+                \t\tandroid:layout_height="wrap_content"/>\n
+        </com.scwang.smartrefresh.SmartRefreshLayout>\n
+    ]]></string>
+    <string name="description_define_in_code">\n
+        Usage： \n
+        final RefreshLayout refreshLayout = findViewById(R.id.refreshLayout);\n
+        refreshLayout.setRefreshHeader(new MaterialHeader(this));\n
+        refreshLayout.setRefreshFooter(new BallPulseFooter(this));\n\n
+    </string>
+
+    <string name="instant_message_input_hint">input message</string>
+    <string name="instant_message_send">Send</string>
+    <string name="switch_scroll_content_when_loaded">Scroll Content</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="query_violation">违章查询</string>
+    <string name="vehicle_inspection">距离年检到期还有%1$s天</string>
+    <string name="violation_map">违章热点查询</string>
+    <string name="title_activity_banner">BannerActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+
+        "3D world.\n\n"
+
+        "The material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z-axis and has a standard 1dp thickness.\n"
+        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+
+        "Resting elevation.\n\n"
+
+        "All material objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible.\n\n"
+
+        "Component elevations.\n\n"
+
+        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app).\n"
+        "Components may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+
+        "Responsive elevation and dynamic elevation offsets.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+
+        "Avoiding elevation interference.\n\n"
+
+        "Components with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
+        "through other material, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout.\n"
+        "On a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears.\n"
+        "On the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n\n"
+    </string>
+    <string name="hint_username">请输入用户名</string>
+    <string name="hint_pwd">请输入密码</string>
+    <string name="action_login">登录</string>
+    <string name="action_forget_pwd">忘记密码</string>
+    <string name="action_register">注册</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="traffic_rules">交通法规</string>
+    <string name="forum">车友交流</string>
+    <string name="toast_login_null">请输入完整信息</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="hint_do_pwd">请再次输入密码</string>
+    <string name="hint_phone">手机号</string>
+    <string name="dialog_loading">努力加载中</string>
+    <string name="toast_pwd_error">用户名或密码错误</string>
+    <string name="toast_login_error">登录失败</string>
+    <string name="toast_phone_being">手机号已被注册</string>
+    <string name="toast_username_being">用户名已存在</string>
+    <string name="toast_reg_error">注册失败</string>
+    <string name="toast_reset_pwd_user">用户名或手机号错误</string>
+    <string name="toast_reset_pwd_error">修改密码失败</string>
+    <string name="dialog_loading_login">正在登录</string>
+    <string name="hint_new_pwd">新密码</string>
+    <string name="action_pwd_modify">重置密码</string>
+    <string name="dialog_loading_reset_wd">正在重置密码</string>
+    <string name="action_logout">退出登录</string>
+    <string name="hint_word">写点什么。。。</string>
+    <string name="hint_title">标题</string>
+    <string name="submit">提交</string>
+    <string name="toast_get_feed_error">获取帖子失败</string>
+    <string name="hint_comment">评论</string>
+    <string name="action_send">发送</string>
+    <string name="webTitleOne">有关车辆年检的建议</string>
+    <string name="toast_user_error">用户已失效</string>
+
+</resources>

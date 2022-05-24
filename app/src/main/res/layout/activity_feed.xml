@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.home.FeedActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/app_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fitsSystemWindows="true"
+                app:elevation="0dp">
+
+                <com.google.android.material.appbar.CollapsingToolbarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:minHeight="32dp"
+                    app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                    app:statusBarScrim="@android:color/transparent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingBottom="32dp"
+                        >
+
+                        <LinearLayout
+                            android:id="@+id/feed_body"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingBottom="0dp"
+                            android:paddingLeft="12dp"
+                            android:paddingRight="12dp"
+                            android:paddingTop="12dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/feed_title"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:text="@string/title_example"
+                                    android:textColor="@color/black"
+                                    android:textSize="20sp" />
+
+
+                                <TextView
+                                    android:id="@+id/user_name"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_below="@id/feed_title"
+                                    android:text="@string/hint_username"
+                                    android:textSize="16sp"/>
+
+                                <TextView
+                                    android:id="@+id/feed_time"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/user_name"
+                                    android:layout_marginTop="3dp"
+                                    android:text="时间"/>
+                            </RelativeLayout>
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/feed_info"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:lineSpacingExtra="3dp"
+                                android:lineSpacingMultiplier="1.2"
+                                android:padding="2dp"
+                                android:text="@string/app_name"
+                                android:textColor="#040303"
+                                android:textSize="18sp" />
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/feed_pic"
+                            android:adjustViewBounds="true"
+                            android:layout_margin="5dp"/>
+                        <LinearLayout
+                            android:id="@+id/feed_action_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/spacing_32"
+                            android:baselineAligned="false"
+                            android:orientation="horizontal">
+
+
+<!--
+                            <LinearLayout
+                                android:id="@+id/feed_comment_layout"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="@dimen/spacing_16"
+                                    android:layout_height="@dimen/spacing_16"
+                                    android:focusable="false"
+                                    android:scaleType="centerInside"
+                                    app:srcCompat="@drawable/ic_message"/>
+
+                                <TextView
+                                    android:id="@+id/feed_comment_num"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/spacing_16"
+                                    android:layout_marginStart="@dimen/dp_10"
+                                    android:layout_marginLeft="@dimen/dp_10"
+                                    android:gravity="center"
+                                    android:text="0"
+                                    android:textSize="@dimen/font_12"
+                                    android:visibility="invisible"
+                                    tools:ignore="SpUsage" />
+                            </LinearLayout>
+-->
+
+                            <LinearLayout
+                                android:id="@+id/feed_like_layout"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:layout_marginTop="@dimen/dp_10"
+                                android:layout_marginLeft="@dimen/dp_10"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/feed_like_icon"
+                                    android:layout_width="@dimen/spacing_16"
+                                    android:layout_height="@dimen/spacing_16"
+                                    android:background="@drawable/ic_like"
+                                    android:onClick="imageOnClick"
+                                    android:scaleType="centerInside" />
+
+                                <TextView
+                                    android:id="@+id/feed_like_num"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/spacing_16"
+                                    android:layout_marginStart="@dimen/dp_10"
+                                    android:layout_marginLeft="@dimen/dp_10"
+                                    android:gravity="center"
+                                    android:text="0"
+                                    android:textSize="@dimen/font_12"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="32dp"
+                        android:layout_gravity="bottom"
+                        android:background="#f2f2f2"
+                        android:gravity="center_vertical"
+                        android:paddingStart="@dimen/spacing_16"
+                        android:text="全部评论"
+                        app:layout_collapseMode="pin"
+                        tools:ignore="RtlSymmetry"
+                        android:paddingLeft="@dimen/spacing_16" />
+
+                </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:overScrollMode="never"
+                    android:scrollbars="none"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+        <View
+            android:id="@+id/edit_mask"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#f2f2f2"
+        android:orientation="horizontal"
+        android:padding="4dp">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edit_tu_cao"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/shape_edit"
+            android:gravity="top"
+            android:hint="@string/hint_comment"
+            android:inputType="textMultiLine"
+            android:lineSpacingExtra="3dp"
+            android:maxLength="140"
+            android:maxLines="6"
+            android:padding="6dp"
+            android:scrollHorizontally="false"
+            android:textColorHint="#818181"/>
+
+        <Button
+            android:id="@+id/btn_publish"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="4dp"
+            android:text="@string/action_send"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_marginLeft="4dp" />
+    </LinearLayout>
+
+
+</LinearLayout>

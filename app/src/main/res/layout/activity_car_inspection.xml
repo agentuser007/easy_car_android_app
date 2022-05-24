@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CarInspectionActivity">
+
+    <TextView
+        android:id="@+id/vehicle_inspection"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:text="@string/vehicle_inspection"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:background="@drawable/shape"
+        android:id="@+id/inspection_advice"
+        android:layout_margin="@dimen/sp_14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="预约验车"
+        android:onClick="advice"/>
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="@dimen/sp_14"
+        android:text="年检建议"
+        app:layout_constraintTop_toBottomOf="@+id/vehicle_inspection"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:background="@drawable/shape"
+        android:id="@+id/inspection_1"
+        android:layout_margin="@dimen/sp_14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="验车前的准备工作"
+        android:onClick="one"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:background="@drawable/shape"
+        android:id="@+id/inspection_2"
+        android:layout_margin="@dimen/sp_14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="机动车检验周期"
+        android:onClick="two"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:background="@drawable/shape"
+        android:id="@+id/inspection_3"
+        android:layout_margin="@dimen/sp_14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="免检核发合格标志地点查询"
+        android:onClick="three"/>
+
+</LinearLayout>
